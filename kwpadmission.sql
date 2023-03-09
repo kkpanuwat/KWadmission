@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2020 at 08:52 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- Generation Time: Mar 09, 2023 at 04:56 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -56,7 +55,8 @@ INSERT INTO `addresss` (`address_id`, `house_no`, `village`, `village_no`, `sub_
 (97, '124/3', '-', '-', '-', 'หล่มสัก', 'เพรชบูล', '67110', '1103702693956'),
 (98, '315', 'ดอนไพล', '8', 'ท่าเยี่ยม', 'โชคชัย', 'นครราชศรีมา', '30190', '1309902698258'),
 (99, '71/1', '-', '10', 'หนองปรือ', 'บางละมุง', 'ชลบุรี', '20150', '1234567891231'),
-(100, '06', 'ฟิวเจอร์', '1', 'หนองปรือ', 'บางละมุง', 'ขอนแก่น', '20150', '1139900309372');
+(100, '06', 'ฟิวเจอร์', '1', 'หนองปรือ', 'บางละมุง', 'ขอนแก่น', '20150', '1139900309372'),
+(101, '71', '1', '1', 'หนองปรือ', 'บางละมุง', 'ชลบุรี', '20150', '1139999999999');
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,8 @@ INSERT INTO `application_form` (`form_id`, `date_form`, `student_id`, `id_card`,
 (95, '17 มี.ค. 2563 เวลา 02:06', '51250', '1103702693956', 'ประเภทนักเรียนมัธยมศึกษาปีที่ 3 (นักเรียนเดิม)', '3001,3002,3003', '10', 'none'),
 (96, '17 มี.ค. 2563 เวลา 02:13', 'none', '1309902698258', 'ชั้นมัธยมศึกษาปีที่ 1 ประเภทในเขตพื้นที่บริการและนักเรียนทั่วไป', '3010', 'none', 'นครราชศรีมา'),
 (97, '19 มี.ค. 2563 เวลา 19:41', 'none', '1234567891231', 'ชั้นมัธยมศึกษาปีที่ 1 ประเภทในเขตพื้นที่บริการและนักเรียนทั่วไป', '3013', 'none', 'ชลบุรี'),
-(98, '19 มี.ค. 2563 เวลา 20:08', 'none', '1139900309372', 'ชั้นมัธยมศึกษาปีที่ 1 ประเภทในเขตพื้นที่บริการและนักเรียนทั่วไป', '3009', 'none', 'กทม');
+(98, '19 มี.ค. 2563 เวลา 20:08', 'none', '1139900309372', 'ชั้นมัธยมศึกษาปีที่ 1 ประเภทในเขตพื้นที่บริการและนักเรียนทั่วไป', '3009', 'none', 'กทม'),
+(99, '15 ก.ย. 2563 เวลา 19:38', 'none', '1139999999999', 'ประเภทนักเรียนทั่วไป', '3001,3003,3004', 'none', 'ชลบุรี');
 
 -- --------------------------------------------------------
 
@@ -166,7 +167,8 @@ INSERT INTO `examination_card` (`card_id`, `barcode_id`, `status_card`) VALUES
 (72, '1103702693956', '01'),
 (73, '1309902698258', '01'),
 (74, '1234567891231', '01'),
-(75, '1139900309372', '00');
+(75, '1139900309372', '01'),
+(76, '1139999999999', '00');
 
 -- --------------------------------------------------------
 
@@ -224,8 +226,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`news_id`, `topic`, `content`, `pic`, `dates`, `files`, `link`, `edit_by`, `type_new`) VALUES
-(63, 'คำแนะนำสำหรับนักเรียน นักศึกษาที่เดินทางกลับจากต่างประเทศ', 'อาการเบื้องต้นที่สังเกตได้จากการติดเชื้อไวรัสโคโรน่า หรือ \"COVID-19\" มีดังนี้ โควิช19<br>\r\n1.มีไข้สูง > 37.5 องศา<br>\r\n2.ไอ<br>\r\n3.เจ็บคอ<br>\r\n4.น้ำมูกไหล<br>\r\n5.หายใจเหนื่อยหอบ หายใจลำบาก<br>\r\n<b>หากมีอาการดังกล่าว รีบไปพบแพทย์ทันที!!! โควิด1</b>\r\n', 'img5e5a73ce8fbc6.jpg', '19 มี.ค. 2563 เวลา 11:46', 'file5e5a73ce8fd67.pdf', 'เอกสารเพิ่มเติม', 'admin', 1001),
-(71, '(ด่วนที่สุด) ประกาศเปลี่ยนแปลงสถานที่สอบ', 'เนื่องจากสถานะการณ์ COVID-2019 คณะผู้บริหารได้เข้าร่วมหารือประชุมมีมติว่า จากเดิม สอบคัดเลือกวันที่ 5 เมษายน 2563 สถานที่: โรงเรียนกุมภวาปี <b>เปลี่ยนเป็น Kumphawapi Hall ศูนย์การค้า SIWALAND (กุมภวาปี) ถนนชวลิต ต.กุมภวาปี อ.กุมภวาปี จังหวัดอุดรธานี</b>', 'img5e72459f87311.jpg', '18 มี.ค. 2563 เวลา 23:00', 'covid.pdf', 'หนังสือเปลี่ยนแปลงสถานที่สอบคัดเลือกนักเรียน 63', 'admin', 1001);
+(71, '(ด่วนที่สุด) ประกาศเปลี่ยนแปลงสถานที่สอบ', 'เนื่องจากสถานะการณ์ COVID-2020 คณะผู้บริหารได้เข้าร่วมหารือประชุมมีมติว่า จากเดิม สอบคัดเลือกวันที่ 5 เมษายน 2563 สถานที่: โรงเรียนกุมภวาปี <b>เปลี่ยนเป็น Kumphawapi Hall ศูนย์การค้า SIWALAND (กุมภวาปี) ถนนชวลิต ต.กุมภวาปี อ.กุมภวาปี จังหวัดอุดรธานี</b>', 'img5e72459f87311.jpg', '12 ม.ค. 2564 เวลา 20:04', 'covid.pdf', 'หนังสือเปลี่ยนแปลงสถานที่สอบคัดเลือกนักเรียน 63', 'admin', 1001);
 
 -- --------------------------------------------------------
 
@@ -257,7 +258,8 @@ INSERT INTO `parents` (`parentd_id`, `father`, `mother`, `statuss`, `id_card`) V
 (111, 'นายจิรายุ บิณฑสูตร', 'นางวราพร บิณฑสูตร', 'อยู่ด้วยกัน', '1103702693956'),
 (112, 'นายสมชาติ เมืองกระโทก', 'นางจรรยา เมืองกระโทก', 'อยู่ด้วยกัน', '1309902698258'),
 (113, 'นายดิเรก แย้มพุฒ', 'นางสาวมณีรัตน์ แย้มพุฒ', 'อยู่ด้วยกัน', '1234567891231'),
-(114, '456', 'kkk', 'อยู่ด้วยกัน', '1139900309372');
+(114, '456', 'kkk', 'อยู่ด้วยกัน', '1139900309372'),
+(115, '-', '-', 'อยู่ด้วยกัน', '1139999999999');
 
 -- --------------------------------------------------------
 
@@ -338,9 +340,10 @@ CREATE TABLE `student` (
 INSERT INTO `student` (`id_card`, `name_title`, `fname`, `lname`, `birthday`, `tel`, `education_level`, `school`, `GPAX`) VALUES
 ('1103702693956', 'นางสาว', 'อธิติยากร', 'บิณฑสูตร', '28/10/2541', '0828850283', 'M4', 'none', '3.00'),
 ('1139900302371', 'เด็กหญิง', 'นกน้อย', 'อุไรพร', '13/08/2546', '0981702755', 'M1', 'หนองใส', '0'),
-('1139900309372', 'เด็กชาย', 'ก', 'ด', '09/03/2563', '0854390131', 'M1', 'บางละมุง', '0'),
+('1139900309372', 'เด็กชาย', 'ภานุวัฒน์', 'ยี่สุ่นซ้อน', '09/03/2563', '0854390131', 'M1', 'บางละมุง', '0'),
 ('1139900309373', 'นาย', 'เฉลียง', 'เอียงตรง', '17/11/2541', '0865505835', 'M4', 'none', '1.54'),
 ('1139900309741', 'นาย', 'ภานุวัฒน์', 'ยี่สุ่นซ้อน', '23/09/2542', '0866252950', 'M4', 'none', '2.35'),
+('1139999999999', 'นาย', 'ภานุวัฒน์ ', 'ยี่สุ่นซ้อน', '14/09/2563', '0854390131', 'M4', 'บางละมุง', '0'),
 ('1234567891231', 'เด็กหญิง', 'สมหญิง', 'รักชาติ', '22/09/2542', '0854390134', 'M1', 'บางละมุง', '0'),
 ('1309902698258', 'เด็กหญิง', 'พัฒน์นรี', 'เมืองกระโทก', '18/08/2542', '0956154906', 'M1', 'โชคชัยสามัคคี', '0'),
 ('1309902762838', 'เด็กหญิง', 'ปัณฑิตา', 'เมนะรัตน์', '11/04/2543', '0801630597', 'M1', 'สุรนารี', '0'),
@@ -365,6 +368,33 @@ CREATE TABLE `student2` (
   `GPAX` varchar(4) NOT NULL,
   `type_student` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_score`
+--
+
+CREATE TABLE `student_score` (
+  `id_card` varchar(13) NOT NULL,
+  `th_scr` varchar(3) NOT NULL,
+  `en_scr` varchar(3) NOT NULL,
+  `math_scr` varchar(3) NOT NULL,
+  `sci_scr` varchar(3) NOT NULL,
+  `social_scr` varchar(3) NOT NULL,
+  `std_level` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student_score`
+--
+
+INSERT INTO `student_score` (`id_card`, `th_scr`, `en_scr`, `math_scr`, `sci_scr`, `social_scr`, `std_level`) VALUES
+('1139900302371', '65', '45', '100', '52', '80', 'M1'),
+('1139900309372', '52', '51', '53', '54', '55', 'M1'),
+('1139900309741', '57', '56', '58', '59', '60', 'M4'),
+('1234567891231', '89', '89', '65', '12', '30', 'M1'),
+('1309902698258', '56', '56', '56', '56', '56', 'M1');
 
 -- --------------------------------------------------------
 
@@ -530,6 +560,18 @@ ALTER TABLE `student`
   ADD PRIMARY KEY (`id_card`);
 
 --
+-- Indexes for table `student2`
+--
+ALTER TABLE `student2`
+  ADD KEY `student2_ibfk_1` (`type_student`);
+
+--
+-- Indexes for table `student_score`
+--
+ALTER TABLE `student_score`
+  ADD PRIMARY KEY (`id_card`);
+
+--
 -- Indexes for table `type_news`
 --
 ALTER TABLE `type_news`
@@ -555,13 +597,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `addresss`
 --
 ALTER TABLE `addresss`
-  MODIFY `address_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `address_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT for table `application_form`
 --
 ALTER TABLE `application_form`
-  MODIFY `form_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `form_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- AUTO_INCREMENT for table `calendar`
@@ -579,7 +621,7 @@ ALTER TABLE `check_name`
 -- AUTO_INCREMENT for table `examination_card`
 --
 ALTER TABLE `examination_card`
-  MODIFY `card_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `card_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `lesson_plans`
@@ -591,13 +633,13 @@ ALTER TABLE `lesson_plans`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `news_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `news_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `parents`
 --
 ALTER TABLE `parents`
-  MODIFY `parentd_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+  MODIFY `parentd_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT for table `result`
