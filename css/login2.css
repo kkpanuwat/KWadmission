@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+}
+
+body{
+    background-color:white;
+}
+
+
+#nav_bar_head{
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 30;
+    width: 100%;
+}
+
+#nav_bar,#nav_bar2,#nav_bar3,#nav_bar4,#nav_bar5{
+    color: rgb(38, 162, 167);
+    transition: all 0.4s;
+}
+
+#nav_bar:hover,#nav_bar2:hover,#nav_bar3:hover,#nav_bar4:hover,#nav_bar5:hover{
+    color: rgb(131, 251, 255);
+    transition: all 0.4s;
+}
+/* #kuy{
+    background-image: linear-gradient(to right, red , yellow);
+} */
+
+#username,#password{
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 5px;
+    height: 3em;
+    border: 2px solid rgba(38, 162, 167, 0.733);
+}
+
+#username_lable,#password_lable{
+    margin-top: 10%;
+}
+
+#login{
+    margin-top: 10%;
+}
+
+#row_1_1{
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid  rgba(50, 50, 50, .5); */
+    box-shadow: 1px 1px 0px 10px  #9a9c9b59;
+    
+
+}
+
+#row_button{
+    margin-top: 10%;
+}
+
+#btn_sing_up{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(67, 173, 40) , rgb(32, 199, 143));
+    border:0px;
+    height: 3em ;
+    border-radius: 5px;
+    color: white;
+    
+}
+/* @media screen and (min-width:768px){*{ */
+    /* margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+}
+
+body{
+    background-color:white;
+}
+
+
+#nav_bar_head{
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    /* z-index: 30;
+    width: 100%;
+}
+
+#nav_bar,#nav_bar2,#nav_bar3,#nav_bar4,#nav_bar5{
+    color: rgb(38, 162, 167);
+    transition: all 0.4s;
+}
+
+#nav_bar:hover,#nav_bar2:hover,#nav_bar3:hover,#nav_bar4:hover,#nav_bar5:hover{
+    color: rgb(131, 251, 255);
+    transition: all 0.4s;
+} */
+/* #kuy{
+    background-image: linear-gradient(to right, red , yellow);
+} */
+
+/* #username,#password{
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 5px;
+    height: 3em;
+    border: 2px solid rgba(67, 173, 40, 0.733);
+}
+
+#username_lable,#password_lable{
+    margin-top: 10%;
+}
+
+#login{
+    margin-top: 10%;
+}
+
+#row_1_1{
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid  rgba(50, 50, 50, .5); */
+    /* box-shadow: 1px 1px 0px 10px  #9a9c9b59;
+    
+
+} */ */
+
+/* #row_button{
+    margin-top: 10%;
+}
+
+#btn_sing_up{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(67, 173, 40) , rgb(32, 199, 143));
+    border:0px;
+    height: 3em ;
+    border-radius: 5px;
+    color: white;
+    
+} */
+} */
+/* @media screen and (max-width:425px){
+    *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+} */
+
+/* body{
+    background-color:white;
+}
+
+
+#nav_bar_head{
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 30;
+    width: 100%;
+}
+
+#nav_bar,#nav_bar2,#nav_bar3,#nav_bar4,#nav_bar5{
+    color: rgb(38, 162, 167);
+    transition: all 0.4s;
+}
+
+#nav_bar:hover,#nav_bar2:hover,#nav_bar3:hover,#nav_bar4:hover,#nav_bar5:hover{
+    /* color: rgb(131, 251, 255);
+    transition: all 0.4s; */
+} */
+/* #kuy{
+    background-image: linear-gradient(to right, red , yellow);
+} */
+
+/* #username,#password{
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 5px;
+    height: 3em;
+    border: 2px solid rgba(67, 173, 40, 0.733);
+}
+
+#username_lable,#password_lable{
+    margin-top: 10%;
+}
+
+#login{
+    
+    margin-top: 25%;
+}
+
+#row_1_1{
+    background-color: white;
+    border-radius: 10px; */
+    /* border: 1px solid  rgba(50, 50, 50, .5); */
+    /* box-shadow: 1px 1px 0px 10px  #9a9c9b59;
+}
+
+#row_button{
+    margin-top: 10%;
+}
+
+#btn_sing_up{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(67, 173, 40) , rgb(32, 199, 143));
+    border:0px;
+    height: 3em ;
+    border-radius: 5px;
+    color: white;
+    
+}
+} */

@@ -1,0 +1,528 @@
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Athiti', sans-serif;
+    word-wrap:break-word !important;
+}
+nav{
+    z-index: 1000000000;
+    font-weight: bold;
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+    background-color: #f9f8eb;
+    z-index: 1000000000;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:1.2em;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+    clear:both;
+    z-index: 1000000000;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+    position: relative;
+    z-index: 1000000000;
+}
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+    background-color: #f9f8eb;
+    z-index: 1000000000;
+}
+/* Styling the links */
+nav a {
+	display:block;
+	padding:20px 20px;	
+    color: rgb(0, 0, 0);
+	font-size:1em;
+    text-decoration:none;
+    z-index: 1000000000;
+}
+nav ul li ul li:hover { background-color: #eae7e7;
+}
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #eae7e7;
+    text-decoration:none;
+    z-index: 1000000000;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+    top:100%; 
+    z-index: 1000000000;
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+    width:30%;
+    z-index: 1000000000;
+
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:100%;
+	float:none;
+	display:list-item;
+    position: relative;
+    z-index: 1000000000;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-65px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:333%; 
+    width: 300%;
+    z-index: 1000000000;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+#row2{
+    background-color: white;
+}
+#navbar1{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(173, 167, 166);
+    position: fixed;
+    z-index: 100;
+    margin-left: 1em;
+}
+.content{
+    background-color: white;
+}
+.kku_1,.kku_2{
+    float: right;
+    margin-top: 20%;
+    margin-right: 25%;
+    border:1.5px solid #333;
+    color: #272727;
+    box-shadow: 5px -5px #676767;
+    padding: 0.2em;
+    width: 10em;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+}
+.kku_2:hover{
+    color: rgb(176, 180, 156);
+    text-decoration: none;
+}
+.kku_2{
+    margin-top: 1em;
+    float: right;  
+}
+.col-md-8 .txt{
+    margin: 5%; 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+i{
+    font-family: 'Itim', cursive;
+}
+.col-md-8 .text1{
+    text-align: left;
+    color: rgb(170, 62, 43);
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.col-md-8 .text2{
+    margin: 0;
+    text-indent: 4%;
+    font-size: 1.3em;
+    margin-bottom:5%;
+}
+.col-md-8 #t2{
+    font-size: 1.3em;
+    margin-bottom:5%;
+}
+#t2{
+    text-indent: none;
+    padding: 0 2% 0;
+}
+.col-md-8 .d-block{
+    margin-bottom: 5%;
+    box-shadow:0 0 20px 0 #333 ;
+}
+.kku_1:hover{
+    color: rgb(176, 180, 156);
+    text-decoration: none;
+}
+#row2{
+    padding-top: 7%;
+    padding-left: 5%;
+    font-size: 1.4em;
+}
+#row3{
+    margin-top: 3em;
+}
+#row4{
+    font-size: 1.2em;
+}
+#content{
+    background-color: white;
+}
+#jarallax-container-0{
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%; 
+    overflow: hidden; 
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
+#kku1 h1{
+    text-align: center;
+    font-weight: bolder;
+    padding: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 6vw;
+    text-shadow: 4px 4px 2px rgb(78, 15, 7),6px 6px 1px rgb(180, 116, 21) ;
+}
+.pic{
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('http://atrc.sc.kku.ac.th/images/2015-Feb-11-100204.jpg');
+    position: fixed; 
+    width: 100%; 
+    height: 100%;
+    visibility: visible; 
+    transform: translate3d(0px, -70.8px, 0px);
+}
+.text1{
+    margin-top: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.text2{
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+.text3{
+    margin-top: 2em;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: white;
+    text-shadow: 2px 2px 1px rgb(75, 95, 95) ;
+}
+#row4_end{
+    background-color: coral;
+}
+.sec-footer{
+    background: #daad86;
+    direction: rtl;
+    text-align: right;
+    color: #333;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+.sec-footer .desc-box{
+    background: transparent;
+    border: 0;
+}
+.card-title{
+    font-weight:bold ;
+}
+.sec-footer .desc-box .card-title::after{
+    content: ' ';
+    background: #333;
+    display: block;
+    width: 95%;
+    height: 0.2rem;
+    margin-top:0.3rem;  
+}
+.sec-footer .desc-box .card-text{
+    font-family:iranyekan_light;
+    text-align: justify;
+}
+.sec-sub-footer{
+    background: #f2f2f4;
+    direction: rtl;
+    text-align: right;
+    color: #000;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size:0.8rem;
+}
+.sec-sub-footer a{
+    font-size:0.8rem;
+}
+/*------------------*/
+.snip1472 {
+    position: relative;
+    font-size: 20px;
+    color: #e6e6e6;
+    width: 45px;
+    margin: 4px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.snip1472:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #e6e6e6;
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+}
+.snip1472:before {
+    color: #fff;
+}
+.snip1472:before,.snip1472:after {
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+.snip1472:hover,.snip1472:active,.snip1472.hover {
+    color: #c0392b;
+}
+.snip1472:hover:after,.snip1472:active:after,.snip1472.hover:after {
+    border-color: #c0392b transparent #c0392b transparent;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.p1{
+    font-size: 1.6em;
+}
+.p2{
+    line-height: 0.8em;
+    font-size: 1.1em;
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #f9f8eb;
+		padding:14px 20px;	
+		color:rgb(0, 0, 0);
+		font-size:1em;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #eae7e7;
+		width:100%;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+		width:100%;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #f9f8eb;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+	nav ul ul ul a{
+		padding:14px 20px;	
+		color:rgb(0, 0, 0);
+		font-size:1em; 
+	}  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #f9f8eb;
+
+	}
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #000000;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+}
+
+@media all and (max-width : 330px) {
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+/* -------------------navbar--------------------- */
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    #kku1{
+        text-align: center;
+    }
+    .text1{
+        padding: 0 5%;
+    }
+    .text2{
+        text-align: center;
+        font-size: 1em;
+        padding: 0 15%;
+    }
+    .col-md-2 .kku_1{
+        margin: auto;
+        display: block;
+    }
+    .col-md-2 .kku_2{
+        margin: auto;
+        display: block;
+    }  
+}
+
+@media only screen and (max-width:768px) {
+    #kku1{
+        text-align: center;
+    }
+    h1{
+        font-size: 3em;
+        text-shadow: none;
+        padding: 0;
+        background-color: rgb(253, 207, 253);
+    }
+    .pic{
+        display:none;
+    }
+    .col-md-8 .text1{
+        padding: 0 10%;
+        font-size:1em;
+    }
+    .col-md-8 .text2{
+        text-align: center;
+        font-size: 1em;
+        padding: 0 10%;
+    }
+    .col-md-2 .kku_1{
+        margin: auto;
+        display: block;
+    }
+    .col-md-2 .kku_2{
+        margin: auto;
+        display: block;
+    }  
+    .col-md-10 .text3{
+        font-size: 1em;
+        padding: 0 10%;
+    }.col-md-8 #t2{
+        font-size: 1em;
+        padding: 0 10%;
+    }
+    .col-md-2 a.kku_1{
+        display: none;
+    }
+    .col-md-2 a.kku_2{
+        display: none;
+    }
+    span{
+        font-size: 1.2em;
+    }
+
+}

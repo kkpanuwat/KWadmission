@@ -1,0 +1,195 @@
+        * {
+            /* margin: 0px;
+            padding: 0px; */
+            font-family: 'Kanit', sans-serif;
+            font-size: 1em;
+        }
+        .con1{
+            margin:auto; 
+            padding:0%;
+        }
+        .well{
+            margin:auto; padding:auto; width:60%;
+        }
+        
+        
+        #nav_bar_head {
+            position: fixed;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            z-index: 30;
+            width: 100%;
+
+        }
+        body{
+            padding: 0%;
+            /* margin: 0%; */
+        }
+        
+        #nav_bar,
+        #nav_bar2,
+        #nav_bar3,
+        #nav_bar4,
+        #nav_bar5 {
+            color: rgb(38, 162, 167);
+            transition: all 0.4s;
+        }
+        
+        #nav_bar:hover,
+        #nav_bar2:hover,
+        #nav_bar3:hover,
+        #nav_bar4:hover,
+        #nav_bar5:hover {
+            color: rgb(131, 251, 255);
+            transition: all 0.4s;
+        }
+        
+        .active {
+            color: red;
+        }
+        
+        #topic_new {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 2em;
+        }
+        
+        #row_2 {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        
+        #row_2_active {
+            background-color: rgb(173, 236, 236);
+            border-radius: 10px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-right: 30%;
+            padding-left: 30%;
+        }
+        
+        #row_2_1,
+        #row_2_2,
+        #row_2_3 {
+            border-radius: 10px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-right: 30%;
+            padding-left: 30%;
+            transition: all 0.4s;
+        }
+        
+        #row_2_1:hover,
+        #row_2_2:hover,
+        #row_2_3:hover {
+            background-color: rgb(173, 236, 236);
+            border-radius: 10px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-right: 30%;
+            padding-left: 30%;
+            transition: all 0.4s;
+        }
+        
+        #card_1 {
+            margin-top: 3%;
+        }
+        
+        #copyright {
+            color: white;
+        }
+        
+        #card_news {
+            margin-top: 3%;
+        }
+        
+        #typestd {
+            width: 25%;
+        }
+        
+        #btn1 {
+            width: 50%;
+            margin-left: 25%;
+        }
+        
+        #processs {
+            width: 25%;
+            float: center;
+        }
+        .row#a{
+            width: 80%;
+            /* float:right; */
+        }
+        .form_control{
+            color: rgb(177, 170, 170);
+            width: 100%;
+            
+        }
+        #bs{
+            width: 50%;
+        }
+        #a{
+            width: 100%;
+             margin-left: 20%;
+        }
+        #s1{
+            width: 5em;
+            background-color: brown;
+        }
+        .i1{
+            width: 17em; height:2.5em; border-radius: 5px; border:1px solid rgb(177, 170, 170); padding:3px;
+        }
+        .i2{
+           width: 17em;
+           height:2.5em;
+           border-radius: 5px;
+        }
+        
+        @media screen and (max-width: 425px) {
+            #a{
+                margin-left: 5%;
+            }
+            .i1{
+                width: 17em; height:2.5em;
+                 border-radius: 5px;
+                 border:1px solid rgb(177, 170, 170);
+                  padding:3px;
+                  margin-bottom: 0.5em;
+            }
+            .i2{
+               width: 17em;
+               height:2.5em;
+               border-radius: 5px;
+               margin-bottom: 0.5em;
+            }
+
+            #searchh {
+                width: 100%;
+            }
+            #nob {
+                margin-right: 100%;
+            }
+            th {
+                width: 100%;
+                
+            }
+            #typestd {
+                width: 100%;
+            }
+            #btn1 {
+                width: 100%;
+                margin-left: 25%;
+            }
+            #processs {
+                width: 100%;
+                
+            }
+            .well{
+                margin:auto; padding:auto; width:80%;
+            }
+
+
+
+            
+        }

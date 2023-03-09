@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+}
+
+
+#nav_bar_head{
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 30;
+    width: 100%;
+}
+
+#nav_bar,#nav_bar2,#nav_bar3,#nav_bar4,#nav_bar5{
+    color: rgb(38, 162, 167);
+    transition: all 0.4s;
+}
+
+#nav_bar:hover,#nav_bar2:hover,#nav_bar3:hover,#nav_bar4:hover,#nav_bar5:hover{
+    color: rgb(131, 251, 255);
+    transition: all 0.4s;
+}
+
+/* START CSS ADD_NEWS */
+
+#form_add{
+    margin-top: 5%;
+}
+
+#row_1_1{
+    /* border: 1px solid  rgba(50, 50, 50, .5); */
+    box-shadow: 5px 5px 25px 5px  #88888859;
+
+}
+
+#topic_lable,#content_lable,#picture_label,#toppic_file_label{
+    margin-top: 3%;
+    color: blue;
+}
+
+#f_name,#l_name,#pro_image{
+    margin-top: 1%;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+    border-color: rgba(211, 210, 210, 0.356);
+}
+
+#l_name{
+    height: 100px;
+}

@@ -1,0 +1,82 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+}
+
+
+#nav_bar_head{
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 30;
+    width: 100%;
+}
+
+#nav_bar,#nav_bar2,#nav_bar3,#nav_bar4,#nav_bar5{
+    color: rgb(38, 162, 167);
+    transition: all 0.4s;
+}
+
+#nav_bar:hover,#nav_bar2:hover,#nav_bar3:hover,#nav_bar4:hover,#nav_bar5:hover{
+    color: rgb(131, 251, 255);
+    transition: all 0.4s;
+}
+.active{
+    color: red;
+}
+
+#topic_new{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#row_2{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#row_2_active{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 10%;  
+}
+
+#row_2_1,#row_2_2,#row_2_3{
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 10%;  
+    transition: all 0.4s;
+    
+}
+
+#row_2_1:hover,#row_2_2:hover,#row_2_3:hover{
+    background-color: rgb(173, 236, 236);
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 10%;  
+    transition: all 0.4s;
+    
+}
+
+#card_1{
+    margin-top: 3%;
+}
+
+#copyright{
+    color: white;
+}
+
+#card_news{
+    margin-top: 3%;
+}
